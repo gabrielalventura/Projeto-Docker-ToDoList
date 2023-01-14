@@ -1,6 +1,6 @@
 FROM node:14
-WORKDIR /todo-app-frontend
+WORKDIR /user
 EXPOSE 3000
-ADD node_modules.tar.gz .
-COPY ./ .
+ADD node_modules.tar.gz ./
+COPY . .
 ENTRYPOINT ["npm", "start"]
